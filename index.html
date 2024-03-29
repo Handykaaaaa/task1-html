@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Buku Online</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-gap: 20px;
+        }
+
+        .sidebar {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar h2 {
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar li {
+            margin-bottom: 5px;
+        }
+
+        .main-content {
+            background-color: antiquewhite;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+h1 {
+    text-align: center;
+}
+
+.book-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.book-card {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.book-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.book-card h3 {
+    margin-bottom: 5px;
+}
+
+.book-card p {
+    color: #777;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <H1>Book List App</H1>
+        </div>
+    </header>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Kategori</h2>
+            <ul>
+                <li><a href="#">Fiksi</a></li>
+                <li><a href="#">Non-Fiksi</a></li>
+                <li><a href="#">Pendidikan</a></li>
+                <li><a href="#">Biografi</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <h1>Toko Buku Online</h1>
+            <section>
+            <div class="book-list">
+                <div class="book-card">
+                    <img src="doraemon.jpg" alt="Book 1">
+                    <h3>Judul Buku 1</h3>
+                    <p>Penulis Buku 1</p>
+                    <p>Harga: $10</p>
+                    <a href="https://www.lazada.co.id/products/manga-buku-komik-doraemon-01-i7368512785.html">
+                        <img src="keranjang.png" alt="">
+                    </a>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="book-card">
+                    <img src="horor.jpg" alt="Book 2">
+                    <h3>Judul Buku 2</h3>
+                    <p>Penulis Buku 2</p>
+                    <p>Harga: $12</p>
+                    <a href="https://www.lazada.co.id/products/buku-komik-anak-misteri-komik-horor-tales-1-pak-isi-5-komik-i6687960176.html
+                    ">
+                        <img src="keranjang.png" style="margin-bottom: auto;" alt="">
+                        
+                    </a>
+                    <p>Add to Cart</p>
+                </div>
+                <div class="book-card">
+                    <img src="shinchan.png" alt="Book 3">
+                    <h3>Judul Buku 3</h3>
+                    <p>Penulis Buku 3</p>
+                    <p>Harga: $15</p>
+                    <a href="https://www.blibli.com/p/original-new-crayon-shinchan-01-buku-komik-manga/ps--MES-70027-78444o">
+                        <img src="keranjang.png" alt="">
+                    </a>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            </section>
+            <br>
+            <section>
+                <div class="book-list">
+                    <div class="book-card">
+                        <img src="doraemon.jpg" alt="Book 1">
+                        <h3>Judul Buku 1</h3>
+                        <p>Penulis Buku 1</p>
+                        <p>Harga: $10</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="book-card">
+                        <img src="horor.jpg" alt="Book 2">
+                        <h3>Judul Buku 2</h3>
+                        <p>Penulis Buku 2</p>
+                        <p>Harga: $12</p>
+                        <a href="https://www.lazada.co.id/products/buku-komik-anak-misteri-komik-horor-tales-1-pak-isi-5-komik-i6687960176.html
+                        ">
+                            <img src="keranjang.png" alt="">
+                            
+                        </a>
+                        <p>Add to Cart</p>
+                    </div>
+                    <div class="book-card">
+                        <img src="shinchan.png" alt="Book 3">
+                        <h3>Judul Buku 3</h3>
+                        <p>Penulis Buku 3</p>
+                        <p>Harga: $15</p>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
